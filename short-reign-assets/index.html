@@ -46,13 +46,17 @@
       align-items: center;
     }
 
-    .link {
+    .link-row {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
       gap: 10px;
-      width: 300px;
-      padding: 12px;
+    }
+
+    .link, .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
       background: #007acc;
       color: white;
       text-decoration: none;
@@ -61,18 +65,19 @@
       transition: background 0.3s;
     }
 
-    .link:hover { background: #005f99; }
+    .link:hover, .icon-link:hover { background: #005f99; }
 
-    .link img {
-      width: 20px;
-      height: 20px;
+    .icon-link img {
+      width: 24px;
+      height: 24px;
+      display: block;
     }
   </style>
 </head>
 <body>
   <!-- Title + Logo -->
   <div class="header">
-    <img src="logo.png" alt="Logo">
+    <img src="images/logo.png" alt="Logo">
     <h1>My Links</h1>
   </div>
 
@@ -84,15 +89,27 @@
 
   <!-- List of Links -->
   <div class="link-list">
-    <a class="link" href="https://twitter.com/yourhandle" target="_blank">
-      <img src="twitter-icon.png" alt="Twitter"> Twitter
-    </a>
-    <a class="link" href="https://github.com/yourusername" target="_blank">
-      <img src="github-icon.png" alt="GitHub"> GitHub
-    </a>
-    <a class="link" href="https://youtube.com/yourchannel" target="_blank">
-      <img src="youtube-icon.png" alt="YouTube"> YouTube
-    </a>
+    <div class="link-row">
+      <a class="link" href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+      <a class="icon-link" href="https://twitter.com/yourhandle" target="_blank">
+        <img src="images/twitter-icon.png" alt="Twitter">
+      </a>
+    </div>
+
+    <div class="link-row">
+      <a class="link" href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a class="icon-link" href="https://github.com/yourusername" target="_blank">
+        <img src="images/github-icon.png" alt="GitHub">
+      </a>
+    </div>
+
+    <div class="link-row">
+      <a class="link" href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+      <a class="icon-link" href="https://youtube.com/yourchannel" target="_blank">
+        <img src="images/youtube-icon.png" alt="YouTube">
+      </a>
+    </div>
+
     <!-- Repeat for up to 50 links -->
   </div>
 </body>
