@@ -8,7 +8,7 @@
       font-family: Arial, sans-serif; 
       background: #f9f9f9; 
       text-align: center; 
-      padding: 50px; 
+      padding: 40px; 
       color: #333;
     }
 
@@ -37,6 +37,17 @@
       font-size: 1.1em;
       line-height: 1.5em;
       color: #555;
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .section-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #007acc;
     }
 
     .link-list {
@@ -84,33 +95,42 @@
   <!-- Description -->
   <p class="description">
     Welcome! Here are my favorite resources, social profiles, and projects. 
-    Click on any of the links below to explore.
+    They are grouped into sections for easier browsing.
   </p>
 
-  <!-- List of Links -->
-  <div class="link-list">
-    <div class="link-row">
-      <a class="link" href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-      <a class="icon-link" href="https://twitter.com/yourhandle" target="_blank">
-        <img src="images/twitter-icon.png" alt="Twitter">
-      </a>
+  <!-- Section 1 -->
+  <div class="section">
+    <div class="section-title">Social Media</div>
+    <div class="link-list">
+      <div class="link-row">
+        <a class="link" href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+        <a class="icon-link" href="https://twitter.com/yourhandle" target="_blank">
+          <img src="images/twitter-icon.png" alt="Twitter">
+        </a>
+      </div>
+      <div class="link-row">
+        <a class="link" href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+        <a class="icon-link" href="https://youtube.com/yourchannel" target="_blank">
+          <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+      </div>
     </div>
-
-    <div class="link-row">
-      <a class="link" href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a class="icon-link" href="https://github.com/yourusername" target="_blank">
-        <img src="images/github-icon.png" alt="GitHub">
-      </a>
-    </div>
-
-    <div class="link-row">
-      <a class="link" href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
-      <a class="icon-link" href="https://youtube.com/yourchannel" target="_blank">
-        <img src="images/youtube-icon.png" alt="YouTube">
-      </a>
-    </div>
-
-    <!-- Repeat for up to 50 links -->
   </div>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <div class="section-title">Coding</div>
+    <div class="link-list">
+      <div class="link-row">
+        <a class="link" href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a class="icon-link" href="https://github.com/yourusername" target="_blank">
+          <img src="images/github-icon.png" alt="GitHub">
+        </a>
+      </div>
+      <!-- More coding-related links here -->
+    </div>
+  </div>
+
+  <!-- Repeat this pattern for all 9 sections, each with its own subtitle and links -->
 </body>
 </html>
