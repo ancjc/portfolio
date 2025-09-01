@@ -39,15 +39,28 @@
     .section-title {
       font-size: 1.3em;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       color: #fff;
       text-align: center;
+    }
+
+    /* Subtitles with optional clickable links */
+    .subtitle {
+      display: block;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 4px;
+    }
+    .subtitle a {
+      color: #1e90ff;
+      text-decoration: underline;
     }
 
     .link-list {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      margin-top: 12px;
     }
 
     .link-row {
@@ -101,13 +114,22 @@
 
   <!-- Description -->
   <p class="description">
-    Welcome! Here are my favorite resources, social profiles, and projects. 
-    They are grouped into sections for easier browsing.
+    Hi! Here is a list of all the assets I used in my animation "Short Reign".
+    
+    
+    EMBED
+    
+    
+    Thank you to all the creators that shared their great work!
   </p>
 
   <!-- Section 1 -->
   <div class="section">
-    <div class="section-title">Social Media</div>
+    <div class="section-title">Social Media
+      <span class="subtitle">
+        Follow me on <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a> and <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+      </span>
+    </div>
     <div class="link-list">
       <div class="link-row">
         <a class="link" href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
@@ -126,7 +148,11 @@
 
   <!-- Section 2 -->
   <div class="section">
-    <div class="section-title">Coding</div>
+    <div class="section-title">Coding
+      <span class="subtitle">
+        See my <a href="https://github.com/yourusername" target="_blank">GitHub</a> projects
+      </span>
+    </div>
     <div class="link-list">
       <div class="link-row">
         <a class="link" href="https://github.com/yourusername" target="_blank">GitHub</a>
@@ -136,6 +162,47 @@
       </div>
     </div>
   </div>
+
+  <!-- Section 3 -->
+  <div class="section">
+    <div class="section-title">Learning Resources</div>
+    <div class="link-list">
+      <div class="link-row">
+        <a class="link" href="https://stackoverflow.com" target="_blank">Stack Overflow</a>
+        <a class="icon-link" href="https://stackoverflow.com" target="_blank">
+          <img src="images/stackoverflow-icon.png" alt="Stack Overflow">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="section">
+    <div class="section-title">Design Tools</div>
+    <div class="link-list">
+      <div class="link-row">
+        <a class="link" href="https://figma.com" target="_blank">Figma</a>
+        <a class="icon-link" href="https://figma.com" target="_blank">
+          <img src="images/figma-icon.png" alt="Figma">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="section">
+    <div class="section-title">Content</div>
+    <div class="link-list">
+      <div class="link-row">
+        <a class="link" href="https://medium.com" target="_blank">Medium</a>
+        <a class="icon-link" href="https://medium.com" target="_blank">
+          <img src="images/medium-icon.png" alt="Medium">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sections 6-9 would follow the same pattern -->
 
   <!-- Extra centered image link at bottom -->
   <div class="final-link">
