@@ -12,23 +12,13 @@
       padding: 40px 20px; 
     }
 
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 10px;
+    /* Centered clickable logo at the top */
+    .top-logo {
+      margin-bottom: 30px;
     }
-
-    .header img {
-      width: 60px;
-      height: 60px;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin: 0;
-      color: #fff;
+    .top-logo img {
+      width: 80px;
+      height: 80px;
     }
 
     .description {
@@ -102,10 +92,11 @@
   </style>
 </head>
 <body>
-  <!-- Title + Logo -->
-  <div class="header">
-    <img src="images/logo.png" alt="Logo">
-    <h1>My Links</h1>
+  <!-- Centered clickable logo at top -->
+  <div class="top-logo">
+    <a href="https://example.com" target="_blank">
+      <img src="images/logo.png" alt="Logo">
+    </a>
   </div>
 
   <!-- Description -->
