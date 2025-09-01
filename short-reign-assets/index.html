@@ -8,7 +8,7 @@
       font-family: Arial, sans-serif; 
       background: #f9f9f9; 
       text-align: center; 
-      padding: 40px; 
+      padding: 40px 20px; 
       color: #333;
     }
 
@@ -41,48 +41,58 @@
 
     .section {
       margin: 40px 0;
+      max-width: 320px;   /* keeps sections narrow for phones */
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .section-title {
       font-size: 1.3em;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       color: #007acc;
+      text-align: left;
     }
 
     .link-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      align-items: center;
+      gap: 10px;
     }
 
     .link-row {
       display: flex;
+      justify-content: space-between; /* text left, icon right */
       align-items: center;
-      gap: 10px;
+      background: #007acc;
+      border-radius: 8px;
+      padding: 10px 14px;
     }
 
-    .link, .icon-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 14px;
-      background: #007acc;
+    .link {
       color: white;
       text-decoration: none;
-      border-radius: 8px;
       font-size: 1em;
-      transition: background 0.3s;
+      flex: 1; /* ensures text hugs left */
+      text-align: left;
     }
 
-    .link:hover, .icon-link:hover { background: #005f99; }
+    .link:hover { text-decoration: underline; }
 
     .icon-link img {
       width: 24px;
       height: 24px;
       display: block;
     }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+    .link-row:hover { background: #005f99; }
   </style>
 </head>
 <body>
@@ -127,10 +137,10 @@
           <img src="images/github-icon.png" alt="GitHub">
         </a>
       </div>
-      <!-- More coding-related links here -->
+      <!-- More coding links here -->
     </div>
   </div>
 
-  <!-- Repeat this pattern for all 9 sections, each with its own subtitle and links -->
+  <!-- Repeat for the rest of the 9 sections -->
 </body>
 </html>
