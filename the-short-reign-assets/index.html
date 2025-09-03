@@ -150,6 +150,26 @@
     color: #666;
     }
 
+    .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;     /* cap on desktop */
+    margin: 0 auto;        /* center horizontally */
+    padding-bottom: 42.85%;/* 21:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    }
+
+
   </style>
 </head>
 <body>
@@ -171,16 +191,16 @@
 </p>
 
 <!-- YouTube embed -->
-<div style="position:relative; padding-bottom:42.85%; height:0; overflow:hidden; max-width:1000px; margin:0 auto;">
+<div class="video-container">
   <iframe src="https://www.youtube.com/embed/keF5AVigJWQ?si=bCu_5zy1F8yV-kzV"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style="position:absolute; top:0; left:0; width:100%; height:100%;">
+          allowfullscreen>
   </iframe>
 </div>
+
 
 
 <p class="description">
