@@ -151,23 +151,19 @@
     }
 
     .video-container {
-    position: relative;
     width: 100%;
-    max-width: 1000px;     /* cap on desktop */
-    margin: 0 auto;        /* center horizontally */
-    padding-bottom: 42.85%;/* 21:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
+    max-width: 1000px;   /* cap on desktop */
+    margin: 0 auto;      /* center horizontally */
     }
     
     .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 21 / 9; /* enforces 21:9 cinematic ratio */
+    height: auto;
     border: 0;
+    display: block;
     }
+
 
 
   </style>
